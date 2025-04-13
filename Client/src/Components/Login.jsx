@@ -92,10 +92,10 @@ const Login = () => {
       if (final.ok) {
         setTimeout(() => {
           navigate("/home");
-        }, 200);
+        }, 100);
       } else {
         console.error("Login failed:", result.error);
-        alert("Login failed");
+        alert("Credentials Invalid");
       }
     } catch (error) {
       console.log("Error:", error);
